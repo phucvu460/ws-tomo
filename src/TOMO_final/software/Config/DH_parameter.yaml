@@ -1,0 +1,46 @@
+num_of_joints: 6
+
+DH_info:
+  
+  joint_1:
+
+      theta: 1
+      alpha: 1
+      r: 0
+      d: 259
+
+  # joint_2:
+  
+  #     theta:
+  #     alpha:
+  #     r:
+  #     d:
+
+  # joint_3:
+  
+  #     theta:
+  #     alpha:
+  #     r:
+  #     d:
+
+  # joint_4:
+  
+  #     theta:
+  #     alpha:
+  #     r:
+  #     d:
+
+  # joint_5:
+  
+  #     theta:
+  #     alpha:
+  #     r:
+  #     d:
+
+
+  # joint_6:
+  
+  #     theta:
+  #     alpha:
+  #     r:
+  #     d:

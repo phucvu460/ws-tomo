@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: TOMO
+    relative_path: urdf/TOMO.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/TOMO.srdf
+  CONFIG:
+    author_name: bao
+    author_email: bao04115@gmail.com
+    generated_timestamp: 1590982804

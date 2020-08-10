@@ -1,0 +1,469 @@
+port: 'enp8s0' 
+# port: 'enp0s31f6' 
+
+driver_info:
+    EPOS4:
+        product_code: 0x60500000
+        vendor_id: 0x000000fb
+    GOLD_DRIVE:
+        product_code: 0x30924
+        vendor_id: 0x0000009A
+    MC5004_DRIVER:
+        product_code: 0x3139
+        vendor_id: 0x147
+    MAXPOS:
+        product_code: 0x30010000
+        vendor_id: 0x000000fb
+
+
+network:
+      slaves_count: 6
+      
+      slaves_info:
+
+            # slave_0:
+            #     driver_brand: 'MAXPOS'
+            #     belong_to : 'hand'
+            #     joint_name: 'finger'
+            #     ratio: 22
+            #     encoder_res: 512
+                
+
+            # slave_1:
+            #     driver_brand: 'MAXPOS'
+            #     belong_to : 'arm'
+            #     joint_name: 'shoulder'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # slave_0:
+            #     driver_brand: 'GOLD_DRIVE'
+            #     belong_to : 'arm'
+            #     joint_name: 'shoulder'
+            #     ratio: 120
+            #     encoder_res: 65536
+    
+
+            ####################################################################
+        # #TOMO_ARM
+        #     slave_0:
+        #         driver_brand: 'GOLD_DRIVE'
+        #         belong_to : 'arm'
+        #         joint_name: 'shoulder_1'
+        #         ratio: 120
+        #         encoder_res: 65536
+            
+
+        #     slave_1:
+        #         driver_brand: 'GOLD_DRIVE'
+        #         belong_to : 'arm'
+        #         joint_name: 'shoulder_2'
+        #         ratio: 120
+        #         encoder_res: 65536
+            
+
+        #     slave_2:
+        #         driver_brand: 'GOLD_DRIVE'
+        #         belong_to : 'arm'
+        #         joint_name: 'upper_arm'
+        #         ratio: 120
+        #         encoder_res: 65536
+
+            
+        #     slave_3:
+        #         driver_brand: 'GOLD_DRIVE'
+        #         belong_to : 'arm'
+        #         joint_name: 'elbow'
+        #         ratio: 120
+        #         encoder_res: 65536
+
+
+        #     slave_4:
+        #         driver_brand: 'GOLD_DRIVE'
+        #         belong_to : 'arm'
+        #         joint_name: 'lower_arm'
+        #         ratio: 100
+        #         encoder_res: 65536
+            
+
+        #     slave_5:
+        #         driver_brand: 'GOLD_DRIVE'
+        #         belong_to : 'arm'
+        #         joint_name: 'wrist'
+        #         ratio: 100
+        #         encoder_res: 65536
+            
+        #     #TOMO hand
+        #     slave_6:
+        #         driver_brand: 'EPOS4'
+        #         belong_to : 'hand'
+        #         joint_name: 'thumb_2'
+        #         ratio: 16
+        #         encoder_res: 2048
+
+        #     slave_7:
+        #         driver_brand: 'EPOS4'
+        #         belong_to : 'hand'
+        #         joint_name: 'thumb_1'
+        #         ratio: 16
+        #         encoder_res: 2048
+            
+        #     slave_8:
+        #         driver_brand: 'EPOS4'
+        #         belong_to : 'hand'
+        #         joint_name: 'index_finger'
+        #         ratio: 22
+        #         encoder_res: 2048
+
+        #     slave_9:
+        #         driver_brand: 'EPOS4'
+        #         belong_to : 'hand'
+        #         joint_name: 'middle_finger'
+        #         ratio: 22
+        #         encoder_res: 2048
+
+        #     slave_10:
+        #         driver_brand: 'EPOS4'
+        #         belong_to : 'hand'
+        #         joint_name: 'ring_finger'
+        #         ratio: 22
+        #         encoder_res: 2048
+
+        #     slave_11:
+        #         driver_brand: 'EPOS4'
+        #         belong_to : 'hand'
+        #         joint_name: 'little_finger'
+        #         ratio: 22
+        #         encoder_res: 2048
+
+            #################################################3
+
+            # #TOMO hand
+            # slave_0:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'little_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # slave_1:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'ring_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+            
+            # slave_2:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'index_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # slave_3:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'middle_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # slave_4:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'thumb_1'
+            #     ratio: 16
+            #     encoder_res: 512
+
+            # slave_5:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'thumb_2'
+            #     ratio: 16
+            #     encoder_res: 512
+
+# # TOMO_ARM
+#             slave_6:
+#                 driver_brand: 'GOLD_DRIVE'
+#                 belong_to : 'arm'
+#                 joint_name: 'shoulder_1'
+#                 ratio: 120
+#                 encoder_res: 65536
+            
+
+#             slave_7:
+#                 driver_brand: 'GOLD_DRIVE'
+#                 belong_to : 'arm'
+#                 joint_name: 'shoulder_2'
+#                 ratio: 120
+#                 encoder_res: 65536
+            
+
+#             slave_8:
+#                 driver_brand: 'GOLD_DRIVE'
+#                 belong_to : 'arm'
+#                 joint_name: 'upper_arm'
+#                 ratio: 120
+#                 encoder_res: 65536
+
+            
+#             slave_9:
+#                 driver_brand: 'GOLD_DRIVE'
+#                 belong_to : 'arm'
+#                 joint_name: 'elbow'
+#                 ratio: 120
+#                 encoder_res: 65536
+
+
+#             slave_10:
+#                 driver_brand: 'GOLD_DRIVE'
+#                 belong_to : 'arm'
+#                 joint_name: 'lower_arm'
+#                 ratio: 100
+#                 encoder_res: 65536
+            
+
+#             slave_11:
+#                 driver_brand: 'GOLD_DRIVE'
+#                 belong_to : 'arm'
+#                 joint_name: 'wrist'
+#                 ratio: 100
+#                 encoder_res: 65536
+
+#                 #################
+            ####################FULL###################
+            #TOMO_ARM_L
+            slave_0:
+                driver_brand: 'GOLD_DRIVE'
+                belong_to : 'arm'
+                joint_name: 'shoulder_1'
+                ratio: 100
+                encoder_res: 65536
+            
+
+            slave_1:
+                driver_brand: 'GOLD_DRIVE'
+                belong_to : 'arm'
+                joint_name: 'shoulder_2'
+                ratio: 100
+                encoder_res: 65536
+            
+
+            slave_2:
+                driver_brand: 'GOLD_DRIVE'
+                belong_to : 'arm'
+                joint_name: 'upper_arm'
+                ratio: 80
+                encoder_res: 65536
+
+            
+            slave_3:
+                driver_brand: 'GOLD_DRIVE'
+                belong_to : 'arm'
+                joint_name: 'elbow'
+                ratio: 80
+                encoder_res: 65536
+
+
+            slave_4:
+                driver_brand: 'GOLD_DRIVE'
+                belong_to : 'arm'
+                joint_name: 'lower_arm'
+                ratio: 50
+                encoder_res: 65536
+            
+
+            slave_5:
+                driver_brand: 'GOLD_DRIVE'
+                belong_to : 'arm'
+                joint_name: 'wrist'
+                ratio: 50
+                encoder_res: 65536
+            
+            # #TOMO_hand_L
+            # slave_12:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'thumb_2'
+            #     ratio: 16
+            #     encoder_res: 512
+
+            # slave_13:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'thumb_1'
+            #     ratio: 16
+            #     encoder_res: 512
+            
+            # slave_14:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'middle_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # slave_15:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'hand'
+            #     joint_name: 'index_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # slave_16:
+            #     driver_brand: 'MAXPOS'
+            #     belong_to : 'hand'
+            #     joint_name: 'ring_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # slave_17:
+            #     driver_brand: 'MAXPOS'
+            #     belong_to : 'hand'
+            #     joint_name: 'little_finger'
+            #     ratio: 22
+            #     encoder_res: 512
+
+            # # #HEAD
+            # slave_6:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'head'
+            #     joint_name: 'shoulder'
+            #     ratio: 73.6
+            #     encoder_res: 512
+            # slave_7:
+            #     driver_brand: 'EPOS4'
+            #     belong_to : 'head'
+            #     joint_name: 'shoulder'
+            #     ratio: 920
+            #     encoder_res: 512
+
+
+            # # #TOMO hand_R
+            # # slave_8:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'thumb_2'
+            # #     ratio: 16
+            # #     encoder_res: 512
+
+            # # slave_9:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'thumb_1'
+            # #     ratio: 16
+            # #     encoder_res: 512
+            
+            # # slave_10:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'index_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+
+            # # slave_11:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'middle_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+
+            # # slave_12:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'ring_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+
+            # # slave_13:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'little_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+            #  #TOMO hand_R
+            # # slave_8:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'little_finger'
+            # #     ratio: 16
+            # #     encoder_res: 512
+
+            # # slave_9:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'thumb_1'
+            # #     ratio: 16
+            # #     encoder_res: 512
+            
+            # # slave_10:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'index_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+
+            # # slave_11:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'ring_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+
+            # # slave_12:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'middle_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+
+            # # slave_13:
+            # #     driver_brand: 'EPOS4'
+            # #     belong_to : 'hand'
+            # #     joint_name: 'little_finger'
+            # #     ratio: 22
+            # #     encoder_res: 512
+            # # TOMO_ARM_R
+            # slave_8:
+            #     driver_brand: 'GOLD_DRIVE'
+            #     belong_to : 'arm'
+            #     joint_name: 'shoulder_1'
+            #     ratio: 120
+            #     encoder_res: 65536
+            
+            # slave_9:
+            #     driver_brand: 'GOLD_DRIVE'
+            #     belong_to : 'arm'
+            #     joint_name: 'shoulder_2'
+            #     ratio: 120
+            #     encoder_res: 65536
+            
+
+            # slave_10:
+            #     driver_brand: 'GOLD_DRIVE'
+            #     belong_to : 'arm'
+            #     joint_name: 'upper_arm'
+            #     ratio: 120
+            #     encoder_res: 65536
+
+            
+            # slave_11:
+            #     driver_brand: 'GOLD_DRIVE'
+            #     belong_to : 'arm'
+            #     joint_name: 'elbow'
+            #     ratio: 120
+            #     encoder_res: 65536
+
+
+            # slave_12:
+            #     driver_brand: 'GOLD_DRIVE'
+            #     belong_to : 'arm'
+            #     joint_name: 'lower_arm'
+            #     ratio: 100
+            #     encoder_res: 65536
+            
+
+            # slave_13:
+            #     driver_brand: 'GOLD_DRIVE'
+            #     belong_to : 'arm'
+            #     joint_name: 'wrist'
+            #     ratio: 100
+            #     encoder_res: 65536

@@ -1,0 +1,5 @@
+<launch>
+  <node name="image_process" pkg="TOMO_final" type="Transform_coordinate.py" output="screen"/>
+  <node name="Add_ring" pkg="TOMO_final" type="Add_ring.py" output="screen"/>
+
+</launch>

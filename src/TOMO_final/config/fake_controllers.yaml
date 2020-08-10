@@ -1,0 +1,28 @@
+controller_list:
+  - name: fake_tomo_left_arm_controller
+    joints:
+      - joint_1_left
+      - joint_2_left
+      - joint_3_left
+      - joint_4_left
+      - joint_5_left
+      - joint_6_left
+  - name: fake_left_hand_controller
+    joints:
+      - joint_6_left
+  - name: fake_tomo_right_arm_controller
+    joints:
+      - joint_1_right
+      - joint_2_right
+      - joint_3_right
+      - joint_4_right
+      - joint_5_right
+      - hand_joint
+  - name: fake_right_hand_controller
+    joints:
+      - hand_joint
+initial:  # Define initial robot poses.
+  - group: tomo_left_arm
+    pose: left_arm_home
+  - group: tomo_right_arm
+    pose: right_arm_home

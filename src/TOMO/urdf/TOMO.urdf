@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="TOMO">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.93810241130204E-07 -0.000386316285931254 0.0968888666070041"
+        rpy="0 0 0" />
+      <mass
+        value="8.83132447725134" />
+      <inertia
+        ixx="0.0575793448618033"
+        ixy="-4.3156287973849E-08"
+        ixz="1.01002746070377E-09"
+        iyy="0.0423254144963157"
+        iyz="-1.93199740717433E-09"
+        izz="0.0808458288984447" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1_right">
+    <inertial>
+      <origin
+        xyz="-0.000116770951663181 0.00486515507498929 0.0746954589647087"
+        rpy="0 0 0" />
+      <mass
+        value="0.227010110091438" />
+      <inertia
+        ixx="0.000243708178478457"
+        ixy="-1.66021010705533E-07"
+        ixz="5.95851806907483E-08"
+        iyy="0.0003426243365169"
+        iyz="-1.97302100623573E-05"
+        izz="0.000198647270051706" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_1_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_1_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1_right"
+    type="revolute">
+    <origin
+      xyz="0 -0.149653699999999 0.346"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1_right" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_2_right">
+    <inertial>
+      <origin
+        xyz="0.0844457878809687 0.000101989286195203 -0.000711500079616463"
+        rpy="0 0 0" />
+      <mass
+        value="0.224067099854849" />
+      <inertia
+        ixx="0.000204476910991099"
+        ixy="-1.32452259272611E-07"
+        ixz="-1.68210249018226E-06"
+        iyy="0.000228971086287487"
+        iyz="2.27423206555866E-07"
+        izz="0.000287593417326689" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_2_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_2_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2_right"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1083463"
+      rpy="-1.5707963267949 0 -3.14159265358979" />
+    <parent
+      link="link_1_right" />
+    <child
+      link="link_2_right" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_3_right">
+    <inertial>
+      <origin
+        xyz="-0.00454794287596466 -0.00163065568804118 0.229261609294948"
+        rpy="0 0 0" />
+      <mass
+        value="0.213526726526992" />
+      <inertia
+        ixx="0.000295392285895187"
+        ixy="2.55971824609778E-06"
+        ixz="2.42012077099998E-05"
+        iyy="0.000223789530418184"
+        iyz="-7.92943480369413E-06"
+        izz="0.000150527475277034" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_3_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_3_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3_right"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="link_2_right" />
+    <child
+      link="link_3_right" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_4_right">
+    <inertial>
+      <origin
+        xyz="0.0706705020224996 -0.0019474253479012 -0.000388890377786499"
+        rpy="0 0 0" />
+      <mass
+        value="0.157682494190408" />
+      <inertia
+        ixx="0.000121793428908691"
+        ixy="2.300132575207E-06"
+        ixz="1.68248584566472E-07"
+        iyy="0.00012579488389509"
+        iyz="3.33924248156573E-07"
+        izz="0.000163908797308814" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_4_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_4_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_right"
+    type="revolute">
+    <origin
+      xyz="0 0 0.261999881246334"
+      rpy="-1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="link_3_right" />
+    <child
+      link="link_4_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_5_right">
+    <inertial>
+      <origin
+        xyz="2.62862985959955E-06 -3.99825925093689E-05 0.231159620523696"
+        rpy="0 0 0" />
+      <mass
+        value="0.177297059983289" />
+      <inertia
+        ixx="7.14269543821157E-05"
+        ixy="-4.39097107681586E-07"
+        ixz="3.91916444752041E-10"
+        iyy="8.25865352501055E-05"
+        iyz="-2.34279475662905E-09"
+        izz="0.000123287285497174" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_5_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_5_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5_right"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="link_4_right" />
+    <child
+      link="link_5_right" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="hand_link">
+    <inertial>
+      <origin
+        xyz="0.0174953909223021 -0.0683958688531121 0.00621333236576688"
+        rpy="0 0 0" />
+      <mass
+        value="0.18641615441014" />
+      <inertia
+        ixx="7.23597280607215E-05"
+        ixy="6.00403205960874E-06"
+        ixz="-9.48627696336613E-07"
+        iyy="4.50161547663777E-05"
+        iyz="3.21609803728982E-06"
+        izz="5.07318546078991E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/hand_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/hand_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hand_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.321499459120271"
+      rpy="-1.5707963267949 0 -0.043686044650857" />
+    <parent
+      link="link_5_right" />
+    <child
+      link="hand_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_1_left">
+    <inertial>
+      <origin
+        xyz="8.45351276024253E-05 0.0048647232175995 -0.0803491589659199"
+        rpy="0 0 0" />
+      <mass
+        value="0.227010110098544" />
+      <inertia
+        ixx="0.000243710145508596"
+        ixy="-4.71305710534827E-07"
+        ixz="-6.75041651725624E-08"
+        iyy="0.000342622369510464"
+        iyz="1.97301940833334E-05"
+        izz="0.000198647270077769" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_1_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_1_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1_left"
+    type="revolute">
+    <origin
+      xyz="0 0.144 0.345999091588534"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.52359"
+      upper="3.14159"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_2_left">
+    <inertial>
+      <origin
+        xyz="-0.0844487310925175 -0.000583153665721165 -0.000102195025952934"
+        rpy="0 0 0" />
+      <mass
+        value="0.2240670998602" />
+      <inertia
+        ixx="0.000204502036886142"
+        ixy="-2.21747921509167E-06"
+        ixz="-1.33914831822612E-07"
+        iyy="0.000287568291467972"
+        iyz="2.26565105604647E-07"
+        izz="0.000228971086335725" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_2_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_2_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2_left"
+    type="revolute">
+    <origin
+      xyz="0 0.000749459120259094 -0.113999794314368"
+      rpy="0 0 0" />
+    <parent
+      link="link_1_left" />
+    <child
+      link="link_2_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.356"
+      upper="0.17453"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_3_left">
+    <inertial>
+      <origin
+        xyz="-0.0858747139912413 0.000346559404267246 -0.00456622316326594"
+        rpy="0 0 0" />
+      <mass
+        value="0.214220241880664" />
+      <inertia
+        ixx="0.000150932655208321"
+        ixy="-7.41015090690671E-06"
+        ixz="-2.42263907828336E-05"
+        iyy="0.000224369684082305"
+        iyz="-3.00990463128839E-06"
+        izz="0.000296253065633001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_3_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_3_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3_left"
+    type="revolute">
+    <origin
+      xyz="-0.1435 -0.000749459120259094 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2_left" />
+    <child
+      link="link_3_left" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.3561"
+      upper="1.570796"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_4_left">
+    <inertial>
+      <origin
+        xyz="-0.0020989685505893 -0.072355178820498 0.00123007865120434"
+        rpy="0 0 0" />
+      <mass
+        value="0.157682496301183" />
+      <inertia
+        ixx="0.000125784644913681"
+        ixy="-2.30899906835262E-06"
+        ixz="1.01217898371279E-07"
+        iyy="0.000121803669564616"
+        iyz="2.65086915647767E-07"
+        izz="0.000163908798753155" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_4_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_4_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_left"
+    type="revolute">
+    <origin
+      xyz="-0.1185 0 -0.00075"
+      rpy="0 0 0" />
+    <parent
+      link="link_3_left" />
+    <child
+      link="link_4_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.570796"
+      upper="0.523598"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_5_left">
+    <inertial>
+      <origin
+        xyz="-0.000505431992630381 -0.104347692805929 -3.99826105053624E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.177297060052954" />
+      <inertia
+        ixx="7.14272085329521E-05"
+        ixy="1.14811065060073E-07"
+        ixz="-4.39090819540098E-07"
+        iyy="0.000123287031335847"
+        iyz="3.3181880174241E-09"
+        izz="8.25865352634625E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_5_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_5_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5_left"
+    type="revolute">
+    <origin
+      xyz="0 -0.1285 0.00075"
+      rpy="0 0 0" />
+    <parent
+      link="link_4_left" />
+    <child
+      link="link_5_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1415"
+      upper="0.3490"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_6_left">
+    <inertial>
+      <origin
+        xyz="0.00514864984860652 -0.0185295130046993 -0.0751071001757195"
+        rpy="0 0 0" />
+      <mass
+        value="0.19393437562808" />
+      <inertia
+        ixx="5.11621112333787E-05"
+        ixy="4.23475259763481E-06"
+        ixz="3.12997240347666E-06"
+        iyy="7.52336491238202E-05"
+        iyz="-6.32262460252191E-06"
+        izz="4.67258124335878E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_6_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_6_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6_left"
+    type="revolute">
+    <origin
+      xyz="0 -0.193 0"
+      rpy="1.5708 1.5271 3.1416" />
+    <parent
+      link="link_5_left" />
+    <child
+      link="link_6_left" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.570"
+      upper="1.570"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_1_head">
+    <inertial>
+      <origin
+        xyz="-0.0078250603517496 0.0883251418406869 0.00715500001582559"
+        rpy="0 0 0" />
+      <mass
+        value="0.234633125007902" />
+      <inertia
+        ixx="0.000214177105962251"
+        ixy="-8.53524194649373E-08"
+        ixz="4.03989529773258E-07"
+        iyy="9.8110545939101E-05"
+        iyz="3.91860723006609E-10"
+        izz="0.000217397035377449" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_1_head.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_1_head.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1_head"
+    type="revolute">
+    <origin
+      xyz="0.00250000000000015 0 0.277"
+      rpy="1.5707963267949 0 -1.55885197038868" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1_head" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_2_head">
+    <inertial>
+      <origin
+        xyz="0.00112128231360629 0.0545589765783932 -0.0307364618254799"
+        rpy="0 0 0" />
+      <mass
+        value="0.128835892667459" />
+      <inertia
+        ixx="6.27926703017431E-05"
+        ixy="3.16907598645175E-08"
+        ixz="-3.14948652026588E-07"
+        iyy="0.000119972521607673"
+        iyz="-2.41068422069961E-06"
+        izz="8.54038299007762E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_2_head.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TOMO/meshes/link_2_head.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2_head"
+    type="revolute">
+    <origin
+      xyz="0 0.177 0"
+      rpy="0.0693479584506404 -2.87108990057302E-05 0.000827692432825673" />
+    <parent
+      link="link_1_head" />
+    <child
+      link="link_2_head" />
+    <axis
+      xyz="0.999928667023102 0 0.0119440723960343" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="1"
+      velocity="2" />
+  </joint>
+</robot>

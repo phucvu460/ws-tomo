@@ -1,0 +1,6 @@
+<launch>
+
+<!--    <node name="main_control_trajec" pkg="TOMO_final" type="control_tr.py"  output="screen" /> -->
+    <node name="head_control" pkg="TOMO_final" type="head_demo.py"  output="screen" />
+
+</launch>
